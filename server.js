@@ -21,6 +21,6 @@ app.get('/music', (req, res) => {
     res.send({ url: fromArray(music) });
 });
 
-app.listen(9000, () => {
+app.listen(8080, () => {
     console.log('App started');
 });
