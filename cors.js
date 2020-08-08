@@ -1,6 +1,6 @@
 import cors from 'cors';
 
-const whitelist = ['http://localhost:3000', 'http://abc.com'];
+const whitelist = [process.env.WHITELIST_DOMAIN || 'http://localhost:3000'];
 
 const setCors = (app) => {
     app.use(
